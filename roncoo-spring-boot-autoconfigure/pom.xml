@@ -10,10 +10,8 @@
 	</parent>
 
 	<artifactId>roncoo-spring-boot-autoconfigure</artifactId>
-
+	
 	<name>roncoo-spring-boot-autoconfigure</name>
-
-
 
 	<dependencies>
 		<dependency>
@@ -25,7 +23,7 @@
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
