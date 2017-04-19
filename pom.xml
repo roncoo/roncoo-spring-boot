@@ -14,14 +14,40 @@
 	<artifactId>roncoo-spring-boot</artifactId>
 	<packaging>pom</packaging>
 
+	<name>${project.groupId}:${project.artifactId}</name>
+	<description>roncoo open source</description>
+	<url>https://github.com/roncoo/roncoo-spring-boot</url>
+
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>fengyongwei</name>
+			<email>fengyw@roncoo.com</email>
+			<organization>LingKe, Co., Ltd.</organization>
+			<organizationUrl>http://www.roncoo.com</organizationUrl>
+		</developer>
+	</developers>
+
 	<organization>
 		<name>LingKe, Co., Ltd.</name>
 		<url>http://www.roncoo.com</url>
 	</organization>
 
+	<scm>
+		<connection>scm:git:https://github.com/roncoo/roncoo-spring-boot.git</connection>
+		<developerConnection>scm:git:https://github.com/roncoo/roncoo-spring-boot.git</developerConnection>
+		<url>https://github.com/roncoo/roncoo-spring-boot</url>
+	</scm>
+
 	<properties>
 		<druid.version>1.0.16</druid.version>
-		
+
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
@@ -31,6 +57,17 @@
 		<module>roncoo-spring-boot-autoconfigure</module>
 		<module>roncoo-spring-boot-starters</module>
 	</modules>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
 
 	<dependencyManagement>
 		<dependencies>
