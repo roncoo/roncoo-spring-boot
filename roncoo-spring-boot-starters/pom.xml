@@ -9,7 +9,7 @@
 		<version>1.0.0</version>
 	</parent>
 
-	<artifactId>roncoo-spring-boot-starts</artifactId>
+	<artifactId>roncoo-spring-boot-starters</artifactId>
 	<packaging>pom</packaging>
 
 	<name>roncoo-spring-boot-starters</name>
