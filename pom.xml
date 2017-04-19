@@ -18,6 +18,34 @@
 	<description>roncoo open source</description>
 	<url>https://github.com/roncoo/roncoo-spring-boot</url>
 
+	<modules>
+		<module>roncoo-spring-boot-autoconfigure</module>
+		<module>roncoo-spring-boot-starters</module>
+	</modules>
+
+	<properties>
+		<druid.version>1.0.16</druid.version>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.roncoo</groupId>
+				<artifactId>roncoo-spring-boot-autoconfigure</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid</artifactId>
+				<version>${druid.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<licenses>
 		<license>
 			<name>The Apache License, Version 2.0</name>
@@ -45,19 +73,6 @@
 		<url>https://github.com/roncoo/roncoo-spring-boot</url>
 	</scm>
 
-	<properties>
-		<druid.version>1.0.16</druid.version>
-
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-	</properties>
-
-	<modules>
-		<module>roncoo-spring-boot-autoconfigure</module>
-		<module>roncoo-spring-boot-starters</module>
-	</modules>
-
 	<distributionManagement>
 		<snapshotRepository>
 			<id>ossrh</id>
@@ -69,19 +84,49 @@
 		</repository>
 	</distributionManagement>
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>com.roncoo</groupId>
-				<artifactId>roncoo-spring-boot-autoconfigure</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.alibaba</groupId>
-				<artifactId>druid</artifactId>
-				<version>${druid.version}</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<executions>
+						<execution>
+							<id>attach-sources</id>
+							<goals>
+								<goal>jar-no-fork</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<executions>
+						<execution>
+							<id>attach-javadocs</id>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-gpg-plugin</artifactId>
+					<executions>
+						<execution>
+							<id>sign-artifacts</id>
+							<phase>verify</phase>
+							<goals>
+								<goal>sign</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 
 </project>
