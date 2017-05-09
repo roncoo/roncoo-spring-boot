@@ -27,14 +27,6 @@ public class DruidAutoConfiguration {
 
 	@Bean
 	public DruidDataSource dataSource() {
-		/*DruidDataSource druidDataSource = (DruidDataSource) properties.initializeDataSourceBuilder().type(DruidDataSource.class).build();
-		DatabaseDriver databaseDriver = DatabaseDriver.fromJdbcUrl(properties.determineUrl());
-		String validationQuery = databaseDriver.getValidationQuery();
-		if (validationQuery != null) {
-			druidDataSource.setValidationQuery(validationQuery);
-		}
-		return druidDataSource;*/
-
 		DruidDataSource dataSource = new DruidDataSource();
 		dataSource.setUrl(properties.getUrl());
 		dataSource.setUsername(properties.getUsername());
