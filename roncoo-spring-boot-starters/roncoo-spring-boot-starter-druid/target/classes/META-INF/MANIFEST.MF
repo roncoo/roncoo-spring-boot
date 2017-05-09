@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Implementation-Title: roncoo-spring-boot-starter-druid
-Implementation-Version: 1.0.0
+Implementation-Version: 1.0.1
 Built-By: Administrator
 Implementation-Vendor-Id: com.roncoo
 Build-Jdk: 1.8.0_73
