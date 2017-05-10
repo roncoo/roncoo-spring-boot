@@ -17,7 +17,7 @@
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-druid</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 ### 方法2：jar下载
