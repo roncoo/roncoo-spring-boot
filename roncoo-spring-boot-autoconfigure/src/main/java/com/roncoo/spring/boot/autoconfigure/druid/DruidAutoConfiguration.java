@@ -2,7 +2,6 @@ package com.roncoo.spring.boot.autoconfigure.druid;
 
 import java.sql.SQLException;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -22,8 +21,11 @@ import com.alibaba.druid.pool.DruidDataSource;
 @AutoConfigureBefore(DataSourceAutoConfiguration.class)
 public class DruidAutoConfiguration {
 
-	@Autowired
-	private DruidProperties properties;
+	private final DruidProperties properties;
+
+	public DruidAutoConfiguration(DruidProperties properties) {
+		this.properties = properties;
+	}
 
 	@Bean
 	public DruidDataSource dataSource() {
@@ -31,12 +33,12 @@ public class DruidAutoConfiguration {
 		dataSource.setUrl(properties.getUrl());
 		dataSource.setUsername(properties.getUsername());
 		dataSource.setPassword(properties.getPassword());
-		
-		if(properties.getName() != null){
-			dataSource.setName(properties.getName());	
+
+		if (properties.getName() != null) {
+			dataSource.setName(properties.getName());
 		}
-		if(properties.getDriverClass() != null){
-			dataSource.setDriverClassName(properties.getDriverClass());	
+		if (properties.getDriverClass() != null) {
+			dataSource.setDriverClassName(properties.getDriverClass());
 		}
 		if (properties.getInitialSize() > 0) {
 			dataSource.setInitialSize(properties.getInitialSize());
