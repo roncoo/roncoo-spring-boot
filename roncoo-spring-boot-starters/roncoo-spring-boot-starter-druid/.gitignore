@@ -6,4 +6,5 @@
 *.project
 *.springBeans
 *.factorypath
+*/target
 */target/
