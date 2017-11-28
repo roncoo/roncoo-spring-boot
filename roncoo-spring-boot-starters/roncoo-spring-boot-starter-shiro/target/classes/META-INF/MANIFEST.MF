@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Implementation-Title: roncoo-spring-boot-starter-shiro
-Implementation-Version: 1.0.3
+Implementation-Version: 1.0.4
 Built-By: Administrator
 Implementation-Vendor-Id: com.roncoo
 Build-Jdk: 1.8.0_144

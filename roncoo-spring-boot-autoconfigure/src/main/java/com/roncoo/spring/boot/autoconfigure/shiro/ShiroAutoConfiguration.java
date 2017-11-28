@@ -7,7 +7,6 @@ import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
-import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -41,17 +40,6 @@ public class ShiroAutoConfiguration {
 	}
 
 	/**
-	 * sessionManager
-	 */
-	@Bean(name = "sessionManager")
-	@ConditionalOnMissingBean(DefaultWebSessionManager.class)
-	public DefaultWebSessionManager sessionManager() {
-		DefaultWebSessionManager sessionManager = new DefaultWebSessionManager();
-		sessionManager.setSessionIdUrlRewritingEnabled(false);
-		return sessionManager;
-	}
-
-	/**
 	 * SecurityManager
 	 */
 	@Bean(name = "securityManager")
@@ -59,7 +47,6 @@ public class ShiroAutoConfiguration {
 	public DefaultWebSecurityManager securityManager() {
 		DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
 		securityManager.setRealm(shiroRealm());
-		securityManager.setSessionManager(sessionManager());
 		return securityManager;
 	}
 
