@@ -6,11 +6,11 @@
 	<parent>
 		<groupId>com.roncoo</groupId>
 		<artifactId>roncoo-spring-boot</artifactId>
-		<version>1.0.4</version>
+		<version>1.0.5</version>
 	</parent>
 
 	<artifactId>roncoo-spring-boot-autoconfigure</artifactId>
-	
+
 	<name>roncoo-spring-boot-autoconfigure</name>
 
 	<dependencies>
@@ -29,11 +29,17 @@
 			<artifactId>druid</artifactId>
 			<optional>true</optional>
 		</dependency>
-		
+
 		<dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-all</artifactId>
-            <optional>true</optional>
-        </dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-web</artifactId>
+			<optional>true</optional>
+		</dependency>
 	</dependencies>
 </project>

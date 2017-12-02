@@ -12,7 +12,7 @@
 
 	<groupId>com.roncoo</groupId>
 	<artifactId>roncoo-spring-boot</artifactId>
-	<version>1.0.4</version>
+	<version>1.0.5</version>
 	<packaging>pom</packaging>
 
 	<name>${project.groupId}:${project.artifactId}</name>
@@ -46,8 +46,13 @@
 				<version>${druid.version}</version>
 			</dependency>
 			<dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+			<dependency>
 				<groupId>org.apache.shiro</groupId>
-				<artifactId>shiro-all</artifactId>
+				<artifactId>shiro-web</artifactId>
 				<version>${shiro.version}</version>
 			</dependency>
 		</dependencies>
