@@ -8,6 +8,7 @@
 3. 如果你有想集成的框架，请和我们反映，我们会择优进行集成共享出来给大家使用
 
 ## 更新
+* 2019-01-05 升级Spring Boot的版本
 * 2017-11-07 集成Shiro并升级Spring Boot的版本
 * 2017-04-20 集成国内优秀的数据链接池Druid
 
@@ -18,13 +19,13 @@
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-shiro</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.6</version>
 </dependency>
 
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-druid</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.6</version>
 </dependency>
 
 ```
