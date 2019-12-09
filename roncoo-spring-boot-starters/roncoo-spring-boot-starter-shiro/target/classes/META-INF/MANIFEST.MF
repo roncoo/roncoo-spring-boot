@@ -1,11 +1,5 @@
 Manifest-Version: 1.0
-Implementation-Title: roncoo-spring-boot-starter-shiro
-Implementation-Version: 1.0.6
 Built-By: Administrator
-Implementation-Vendor-Id: com.roncoo
-Build-Jdk: 1.8.0_144
-Implementation-URL: https://github.com/roncoo/roncoo-spring-boot/ronco
- o-spring-boot-starters/roncoo-spring-boot-starter-shiro
+Build-Jdk: 1.8.0_201
 Created-By: Maven Integration for Eclipse
-Implementation-Vendor: LingKe, Co., Ltd.
 

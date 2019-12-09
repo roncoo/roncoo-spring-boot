@@ -9,9 +9,9 @@
 		<version>1.0.7</version>
 	</parent>
 
-	<artifactId>roncoo-spring-boot-starter-druid</artifactId>
+	<artifactId>roncoo-spring-boot-starter-xxl-job</artifactId>
 
-	<name>roncoo-spring-boot-starter-druid</name>
+	<name>roncoo-spring-boot-starter-xxl-job</name>
 
 	<dependencies>
 		<dependency>
@@ -19,10 +19,10 @@
 			<artifactId>roncoo-spring-boot-autoconfigure</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>druid</artifactId>
-		</dependency>
+		 <dependency>
+            <groupId>com.xuxueli</groupId>
+            <artifactId>xxl-job-core</artifactId>
+        </dependency>
 	</dependencies>
 
 </project>
