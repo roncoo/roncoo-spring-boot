@@ -6,14 +6,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.xxl.job.core.executor.impl.XxlJobSpringExecutor;
-import com.xxl.job.core.handler.annotation.JobHandler;
+import com.xxl.job.core.handler.annotation.XxlJob;
 
 /**
  * 
  * @author wujing
  */
 @Configuration
-@ConditionalOnClass(JobHandler.class)
+@ConditionalOnClass(XxlJob.class)
 @EnableConfigurationProperties(XxlJobProperties.class)
 public class XxlJobAutoConfiguration {
 
