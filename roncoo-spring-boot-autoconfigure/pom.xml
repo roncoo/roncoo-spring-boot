@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.roncoo</groupId>
         <artifactId>roncoo-spring-boot</artifactId>
-        <version>1.2.2</version>
+        <version>1.2.3</version>
     </parent>
 
     <artifactId>roncoo-spring-boot-autoconfigure</artifactId>
@@ -22,6 +22,17 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.roncoo</groupId>
+            <artifactId>fastdfs-client-java</artifactId>
             <optional>true</optional>
         </dependency>
 

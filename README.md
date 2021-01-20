@@ -8,6 +8,7 @@
 3. 如果你有想集成的框架，请和我们反映，我们会择优进行集成共享出来给大家使用
 
 ## 更新
+* 2021-01-20 升级Spring Boot的版本
 * 2020-11-16 修复xxl-job本地启动产生端口冲突的bug
 * 2019-12-16 升级xxl-job版本到2.1.2
 * 2019-12-09 集成xxl-job并升级Spring Boot的版本，移除druid，因为官方已经集成，这里不再维护
@@ -21,14 +22,20 @@
 ```
 <dependency>
     <groupId>com.roncoo</groupId>
+    <artifactId>roncoo-spring-boot-starter-fastdfs</artifactId>
+    <version>1.2.3</version>
+</dependency>
+
+<dependency>
+    <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-shiro</artifactId>
-    <version>1.2.2</version>
+    <version>1.2.3</version>
 </dependency>
 
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-xxl-job</artifactId>
-    <version>1.2.2</version>
+    <version>1.2.3</version>
 </dependency>
 
 ```
