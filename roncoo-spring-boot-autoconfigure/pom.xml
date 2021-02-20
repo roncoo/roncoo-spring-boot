@@ -11,7 +11,6 @@
     </parent>
 
     <artifactId>roncoo-spring-boot-autoconfigure</artifactId>
-
     <name>roncoo-spring-boot-autoconfigure</name>
 
     <dependencies>
@@ -50,12 +49,10 @@
             <artifactId>shiro-web</artifactId>
             <optional>true</optional>
         </dependency>
-
         <dependency>
             <groupId>com.xuxueli</groupId>
             <artifactId>xxl-job-core</artifactId>
             <optional>true</optional>
         </dependency>
-
     </dependencies>
 </project>
