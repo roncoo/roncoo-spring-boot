@@ -1,4 +1,6 @@
 # Auto Configure
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.roncoo.spring.boot.autoconfigure.fastdfs.FastdfsAutoConfiguration,\
+com.roncoo.spring.boot.autoconfigure.minio.MinioAutoConfiguration,\
 com.roncoo.spring.boot.autoconfigure.shiro.ShiroAutoConfiguration,\
 com.roncoo.spring.boot.autoconfigure.xxl.job.XxlJobAutoConfiguration

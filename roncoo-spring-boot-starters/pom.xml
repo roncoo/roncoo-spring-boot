@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.roncoo</groupId>
         <artifactId>roncoo-spring-boot</artifactId>
-        <version>1.2.3</version>
+        <version>1.3.0</version>
     </parent>
 
     <artifactId>roncoo-spring-boot-starters</artifactId>
@@ -16,6 +16,7 @@
 
     <modules>
         <module>roncoo-spring-boot-starter-fastdfs</module>
+        <module>roncoo-spring-boot-starter-minio</module>
         <module>roncoo-spring-boot-starter-shiro</module>
         <module>roncoo-spring-boot-starter-xxl-job</module>
     </modules>
