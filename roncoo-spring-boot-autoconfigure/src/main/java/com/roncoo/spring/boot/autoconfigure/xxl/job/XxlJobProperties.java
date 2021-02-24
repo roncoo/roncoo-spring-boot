@@ -3,106 +3,105 @@ package com.roncoo.spring.boot.autoconfigure.xxl.job;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * 
  * @author wujing
  */
 @ConfigurationProperties(prefix = "xxl.job")
 public class XxlJobProperties {
 
-	private Admin admin = new Admin();
+    private Admin admin = new Admin();
 
-	private String accessToken;
+    private String accessToken;
 
-	private Executor executor = new Executor();
+    private Executor executor = new Executor();
 
-	public Admin getAdmin() {
-		return admin;
-	}
+    public Admin getAdmin() {
+        return admin;
+    }
 
-	public void setAdmin(Admin admin) {
-		this.admin = admin;
-	}
+    public void setAdmin(Admin admin) {
+        this.admin = admin;
+    }
 
-	public String getAccessToken() {
-		return accessToken;
-	}
+    public String getAccessToken() {
+        return accessToken;
+    }
 
-	public void setAccessToken(String accessToken) {
-		this.accessToken = accessToken;
-	}
+    public void setAccessToken(String accessToken) {
+        this.accessToken = accessToken;
+    }
 
-	public Executor getExecutor() {
-		return executor;
-	}
+    public Executor getExecutor() {
+        return executor;
+    }
 
-	public void setExecutor(Executor executor) {
-		this.executor = executor;
-	}
+    public void setExecutor(Executor executor) {
+        this.executor = executor;
+    }
 
-	public static class Admin {
-		private String addresses;
+    public static class Admin {
+        private String addresses;
 
-		public String getAddresses() {
-			return addresses;
-		}
+        public String getAddresses() {
+            return addresses;
+        }
 
-		public void setAddresses(String addresses) {
-			this.addresses = addresses;
-		}
+        public void setAddresses(String addresses) {
+            this.addresses = addresses;
+        }
 
-	}
+    }
 
-	public static class Executor {
-		private String appName;
+    public static class Executor {
+        private String appname;
 
-		private String ip;
+        private String ip;
 
-		private int port;
+        private int port;
 
-		private String logPath;
+        private String logPath;
 
-		private int logRetentionDays;
+        private int logRetentionDays;
 
-		public String getAppName() {
-			return appName;
-		}
+        public String getAppname() {
+            return appname;
+        }
 
-		public void setAppName(String appName) {
-			this.appName = appName;
-		}
+        public void setAppname(String appname) {
+            this.appname = appname;
+        }
 
-		public String getIp() {
-			return ip;
-		}
+        public String getIp() {
+            return ip;
+        }
 
-		public void setIp(String ip) {
-			this.ip = ip;
-		}
+        public void setIp(String ip) {
+            this.ip = ip;
+        }
 
-		public int getPort() {
-			return port;
-		}
+        public int getPort() {
+            return port;
+        }
 
-		public void setPort(int port) {
-			this.port = port;
-		}
+        public void setPort(int port) {
+            this.port = port;
+        }
 
-		public String getLogPath() {
-			return logPath;
-		}
+        public String getLogPath() {
+            return logPath;
+        }
 
-		public void setLogPath(String logPath) {
-			this.logPath = logPath;
-		}
+        public void setLogPath(String logPath) {
+            this.logPath = logPath;
+        }
 
-		public int getLogRetentionDays() {
-			return logRetentionDays;
-		}
+        public int getLogRetentionDays() {
+            return logRetentionDays;
+        }
 
-		public void setLogRetentionDays(int logRetentionDays) {
-			this.logRetentionDays = logRetentionDays;
-		}
+        public void setLogRetentionDays(int logRetentionDays) {
+            this.logRetentionDays = logRetentionDays;
+        }
 
-	}
+    }
 
 }
