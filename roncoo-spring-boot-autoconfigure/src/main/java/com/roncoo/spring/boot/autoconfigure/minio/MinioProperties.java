@@ -8,6 +8,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "minio")
 public class MinioProperties {
 
+    // 是否启用MinIO
+    private Boolean enabled;
     // endpoint
     private String endpoint = "localhost";
     // port
@@ -18,6 +20,14 @@ public class MinioProperties {
     private String secretKey = "";
     // bucketname
     private String bucketname = "";
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+    }
 
     public String getEndpoint() {
         return endpoint;
