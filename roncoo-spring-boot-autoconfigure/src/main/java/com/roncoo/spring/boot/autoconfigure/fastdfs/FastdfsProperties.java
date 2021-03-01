@@ -9,7 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class FastdfsProperties {
 
     // 是否启用FastDFS
-    private Boolean enabled;
+    private Boolean enabled = false;
 
     // Nginx服务器IP，多个使用分号分割
     private String nginxServers = "";

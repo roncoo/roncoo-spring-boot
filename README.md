@@ -8,8 +8,8 @@
 3. 如果你有想集成的框架，请和我们反映，我们会择优进行集成共享出来给大家使用
 
 ## 更新
-* 2021-02-26 升级xxl-job的版本，增加MinIO和FastDFS的启用开关
-* 2021-02-20 集成MinIO
+* 2021-03-01 优化增加MinIO和FastDFS的启用开关
+* 2021-02-20 集成MinIO，并升级xxl-job的版本
 * 2021-01-20 集成FastDFS，并升级Spring Boot的版本
 * 2020-11-16 修复xxl-job本地启动产生端口冲突的bug
 * 2019-12-16 升级xxl-job版本到2.1.2
@@ -18,32 +18,31 @@
 * 2017-11-07 集成Shiro并升级Spring Boot的版本
 * 2017-04-20 集成国内优秀的数据链接池Druid
 
-
 ## 使用说明
 ### 方法1：使用maven
 ```
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-minio</artifactId>
-    <version>1.3.2</version>
+    <version>1.4.0</version>
 </dependency>
 
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-fastdfs</artifactId>
-    <version>1.3.2</version>
+    <version>1.4.0</version>
 </dependency>
 
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-shiro</artifactId>
-    <version>1.3.2</version>
+    <version>1.4.0</version>
 </dependency>
 
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-xxl-job</artifactId>
-    <version>1.3.2</version>
+    <version>1.4.0</version>
 </dependency>
 
 ```

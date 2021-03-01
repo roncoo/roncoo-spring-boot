@@ -9,11 +9,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class MinioProperties {
 
     // 是否启用MinIO
-    private Boolean enabled;
+    private Boolean enabled = false;
     // endpoint
     private String endpoint = "localhost";
-    // port
-    private Integer port = 9000;
     // accessKey
     private String accessKey = "";
     // secretKey
@@ -35,14 +33,6 @@ public class MinioProperties {
 
     public void setEndpoint(String endpoint) {
         this.endpoint = endpoint;
-    }
-
-    public Integer getPort() {
-        return port;
-    }
-
-    public void setPort(Integer port) {
-        this.port = port;
     }
 
     public String getAccessKey() {
