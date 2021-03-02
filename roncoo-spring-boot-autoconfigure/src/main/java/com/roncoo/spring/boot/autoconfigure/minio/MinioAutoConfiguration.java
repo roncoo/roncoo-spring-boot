@@ -3,7 +3,6 @@ package com.roncoo.spring.boot.autoconfigure.minio;
 import io.minio.BucketExistsArgs;
 import io.minio.MakeBucketArgs;
 import io.minio.MinioClient;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -15,7 +14,6 @@ import org.springframework.util.StringUtils;
  * @author wujing
  */
 @Configuration
-@ConditionalOnClass(MinioClient.class)
 @EnableConfigurationProperties(MinioProperties.class)
 @ConditionalOnProperty(name = "minio.enabled", matchIfMissing = true)
 public class MinioAutoConfiguration {

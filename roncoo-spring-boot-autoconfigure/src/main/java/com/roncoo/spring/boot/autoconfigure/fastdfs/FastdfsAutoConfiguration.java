@@ -1,7 +1,5 @@
 package com.roncoo.spring.boot.autoconfigure.fastdfs;
 
-import com.roncoo.fastdfs.StorageClient;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -12,7 +10,6 @@ import org.springframework.context.annotation.Configuration;
  * @author wujing
  */
 @Configuration
-@ConditionalOnClass(StorageClient.class)
 @EnableConfigurationProperties(FastdfsProperties.class)
 @ConditionalOnProperty(name = "fastdfs.enabled", matchIfMissing = true)
 public class FastdfsAutoConfiguration {
