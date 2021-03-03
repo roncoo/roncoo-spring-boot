@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @EnableConfigurationProperties(FastdfsProperties.class)
-@ConditionalOnProperty(name = "fastdfs.enabled", matchIfMissing = true)
+@ConditionalOnProperty(name = "fastdfs.enabled", havingValue = "true")
 public class FastdfsAutoConfiguration {
 
     private final FastdfsProperties properties;
