@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.roncoo</groupId>
         <artifactId>roncoo-spring-boot</artifactId>
-        <version>1.4.1</version>
+        <version>1.4.2</version>
     </parent>
 
     <artifactId>roncoo-spring-boot-autoconfigure</artifactId>
@@ -53,6 +53,12 @@
             <groupId>com.xuxueli</groupId>
             <artifactId>xxl-job-core</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8.13</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

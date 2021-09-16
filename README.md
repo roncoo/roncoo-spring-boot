@@ -8,6 +8,7 @@
 3. 如果你有想集成的框架，请和我们反映，我们会择优进行集成共享出来给大家使用
 
 ## 更新
+* 2021-09-16 升级MinIO的版本到8.3.0
 * 2021-03-03 优化增加MinIO和FastDFS的启用开关
 * 2021-02-20 集成MinIO，并升级xxl-job的版本
 * 2021-01-20 集成FastDFS，并升级Spring Boot的版本
@@ -24,25 +25,25 @@
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-minio</artifactId>
-    <version>1.4.1</version>
+    <version>1.4.2</version>
 </dependency>
 
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-fastdfs</artifactId>
-    <version>1.4.1</version>
+    <version>1.4.2</version>
 </dependency>
 
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-shiro</artifactId>
-    <version>1.4.1</version>
+    <version>1.4.2</version>
 </dependency>
 
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-xxl-job</artifactId>
-    <version>1.4.1</version>
+    <version>1.4.2</version>
 </dependency>
 
 ```
