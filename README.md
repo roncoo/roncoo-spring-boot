@@ -25,25 +25,25 @@
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-minio</artifactId>
-    <version>1.4.2</version>
+    <version>1.4.3</version>
 </dependency>
 
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-fastdfs</artifactId>
-    <version>1.4.2</version>
+    <version>1.4.3</version>
 </dependency>
 
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-shiro</artifactId>
-    <version>1.4.2</version>
+    <version>1.4.3</version>
 </dependency>
 
 <dependency>
     <groupId>com.roncoo</groupId>
     <artifactId>roncoo-spring-boot-starter-xxl-job</artifactId>
-    <version>1.4.2</version>
+    <version>1.4.3</version>
 </dependency>
 
 ```
