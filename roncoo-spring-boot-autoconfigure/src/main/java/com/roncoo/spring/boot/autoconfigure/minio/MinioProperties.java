@@ -8,16 +8,22 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "minio")
 public class MinioProperties {
 
-    // 是否启用MinIO
+    /**
+     * 是否启用MinIO
+     **/
     private Boolean enabled = false;
-    // endpoint
+    /**
+     * endpoint
+     **/
     private String endpoint = "localhost";
-    // accessKey
+    /**
+     * accessKey
+     **/
     private String accessKey = "";
-    // secretKey
+    /**
+     * secretKey
+     **/
     private String secretKey = "";
-    // bucketname
-    private String bucketname = "";
 
     public Boolean getEnabled() {
         return enabled;
@@ -51,11 +57,4 @@ public class MinioProperties {
         this.secretKey = secretKey;
     }
 
-    public String getBucketname() {
-        return bucketname;
-    }
-
-    public void setBucketname(String bucketname) {
-        this.bucketname = bucketname;
-    }
 }
