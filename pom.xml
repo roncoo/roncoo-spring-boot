@@ -22,7 +22,7 @@
         <fastdfs.version>1.29</fastdfs.version>
         <minio.version>8.3.3</minio.version>
         <shiro.version>1.7.1</shiro.version>
-        <xxl.job.version>2.3.0</xxl.job.version>
+        <xxl.job.version>2.3.1</xxl.job.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
